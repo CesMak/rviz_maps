@@ -1,0 +1,21 @@
+header:
+  seq: 999
+  stamp:
+    secs: 1435607489
+    nsecs: 924811809
+  frame_id: gps
+status:
+  status: 0
+  service: 1
+latitude: 49.974630
+longitude: 9.756021
+altitude: -30.551
+position_covariance: [3.9561210000000004, 0.0, 0.0, 0.0, 3.9561210000000004, 0.0, 0.0, 0.0, 7.650756]
+position_covariance_type: 2
+
+#Locations Latitude - Longitude:
+#Rodgau 49.993355, 8.910450
+#Karlburg 49.974630, 9.756021
+# -75.1899286  39.951129
+# 49.853964, 8.646880
+#Type: sensor_msgs/NavSatFix
