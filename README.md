@@ -25,7 +25,9 @@ compilation terminated.
 
 * source ws
 * try rosmsg show rviz_maps/rviz_scale.msg
-* simply do catkin build again!
+* roscd rviz_maps
+* catkin build --this
+* catkin build
 
 ## License BSD
 If you want to use this package please contact: [me](https://simact.de/about_me).

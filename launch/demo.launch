@@ -7,7 +7,7 @@
 
 
     <group if="$(arg use_bag)" >
-        <node pkg="rosbag" type="play" name="rosbag_play" args="-l $(find rviz_maps)/data/$(arg bag_name).bag" />
+        <node pkg="rosbag" type="play" name="rosbag_play" args="$(find rviz_maps)/data/$(arg bag_name).bag" />
     </group>
 
     <node pkg="rviz_maps" type="plot_markers" name="plot_markers" output="screen"  args=""></node> -->
