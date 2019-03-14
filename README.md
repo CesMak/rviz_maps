@@ -12,6 +12,8 @@ Load Tiles from tile server around a latitude and longitude coordinate and plot 
 roslaunch rviz_maps demo.launch
 ``` 
 
+** If you do not see the map** -> change the latitute and click enter!
+
 ## Errors:
 
 ``` 
@@ -28,6 +30,24 @@ compilation terminated.
 * roscd rviz_maps
 * catkin build --this
 * catkin build
+
+**mapscache is stored in package of different folder**
+``` 
+  const std::string package_path = ros::package::getPath("rviz_pics");
+  if (package_path.empty()) {
+    throw std::runtime_error("package 'rviz_pics' not found to create storage folder");
+  }
+
+  std::hash<std::string> hash_fn;
+  cache_path_ =
+      QDir::cleanPath(QString::fromStdString(package_path) + QDir::separator() +
+                      QString("mapscache") + QDir::separator() +
+                      QString::number(hash_fn(object_uri_)));
+``` 
+
+Change storage folder here ^^^
+
+If this does not work change a little thing in the tileloader.cpp file and catkin build again and then it should work.
 
 ## License BSD
 If you want to use this package please contact: [me](https://simact.de/about_me).
