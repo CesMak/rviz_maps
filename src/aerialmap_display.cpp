@@ -8,6 +8,13 @@
  *	Created on: 07/09/2014
  */
 
+ /**************************************************************************//**
+   @author  Markus Lamprecht
+   @date    March 2019
+   @link    www.simact.de/about_me
+   @Copyright (c) 2019 Markus Lamprecht. BSD
+ *****************************************************************************/
+
 #include <QtGlobal>
 #include <QImage>
 
