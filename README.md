@@ -38,7 +38,7 @@ source devel/setup.bash
 
 - Start via: ``` roslaunch rviz_maps demo.launch``` 
 - Have a look to the launch file to use the bag file (etc.)
-- ** If you do not see the map** -> change the latitute and click enter!
+- If you do not see the map -> change the latitute and click enter!
 
 ## Main Launch file
 
